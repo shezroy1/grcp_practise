@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service CoffeeTypes {
+    rpc GetOneCoffeeType(Request) returns (CoffeeType){}
+
+    rpc GetMultipleCoffeeTypes(Request) returns (stream CoffeeType){}
+}
+
+message Request {
+    string message = 1;
+    string newmessage = 2;
+}
+
+message CoffeeType {
+    string name = 1;
+}
