@@ -1,6 +1,6 @@
 var grpc = require("grpc");
 var protoLoader = require("@grpc/proto-loader");
-var PROTO_PATH = "../../PycharmProjects/gRPC-python/myProto.proto";
+var PROTO_PATH = "./gRPC-python/myProto.proto";
 var packageDefinition = protoLoader.loadSync(PROTO_PATH, {
     keepCase: true,
     longs: String,
